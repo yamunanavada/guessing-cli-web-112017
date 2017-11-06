@@ -10,8 +10,9 @@ def run_guessing_game
       break
     else
       puts "The computer guessed #{random_num}."
+      user_inputs = gets.chomp
     end
-    user_inputs = gets.chomp
+    
   end
 puts "Goodbye!"
 end
