@@ -12,7 +12,6 @@ def run_guessing_game
       puts "The computer guessed #{random_num}."
       user_inputs = gets.chomp
     end
-    
   end
 puts "Goodbye!"
 end
