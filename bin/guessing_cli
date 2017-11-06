@@ -2,8 +2,9 @@
 
 require_relative "../guessing_cli"
 
-def run_guessing_game
+run_guessing_game
 
+def run_guessing_game
   user_inputs = gets.chomp
   random_num = rand
   while user_inputs != "exit"
