@@ -5,8 +5,9 @@ require_relative "../guessing_cli"
 run_guessing_game
 
 def run_guessing_game
+  puts "Guess a number between 1 and 6."
   user_inputs = gets.chomp
-  random_num = rand
+  random_num = 1 + rand(6)
   while user_inputs != "exit"
 
     if user_inputs.to_f == random_num
