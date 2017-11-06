@@ -2,4 +2,25 @@
 
 require_relative "../guessing_cli"
 
-run_guessing_game
+def run_guessing_game
+
+  user_inputs = gets.chomp
+  random_num = rand
+  while user_inputs != "exit"
+  
+    if user_inputs.to_f == random_num
+      puts "You guessed the correct number!"
+    else 
+      puts "The computer guessed #{random_num}."
+    end
+    user_inputs = gets.chomp
+  end
+
+end
+    
+
+
+
+end
+
+
