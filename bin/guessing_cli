@@ -2,8 +2,8 @@
 
 require_relative "../guessing_cli"
 
-run_guessing_game
 
+def run_guessing_game
   puts "Guess a number between 1 and 6."
   user_inputs = gets.chomp
   random_num = 1 + rand(6)
@@ -18,3 +18,5 @@ run_guessing_game
   end
 puts "Goodbye!"
 end
+
+run_guessing_game
